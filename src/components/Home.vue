@@ -6,7 +6,7 @@ const theme = ref(document.documentElement.getAttribute("data-theme"));
 let isDark: boolean = theme.value === "dark" ? true : false;
 
 onMounted(() => {
-  isDark = console.log(isDark);
+  //isDark = console.log(isDark);
 });
 </script>
 
