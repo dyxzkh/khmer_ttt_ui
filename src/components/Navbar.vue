@@ -3,7 +3,7 @@
     <div class="navbar bg-base-100 px-0">
       <div class="navbar-start">
         <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden pl-0">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden px-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5"

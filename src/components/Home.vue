@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import Navbar from "./Navbar.vue";
 import { ref, onMounted } from "vue";
-const theme = ref(document.documentElement.getAttribute("data-theme"));
 
+const theme = ref(document.documentElement.getAttribute("data-theme"));
 let isDark: boolean = theme.value === "dark" ? true : false;
 
 onMounted(() => {
