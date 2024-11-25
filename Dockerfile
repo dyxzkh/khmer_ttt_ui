@@ -20,7 +20,10 @@ RUN npm run build
 FROM nginx:alpine
 
 # Copy the build output from the build stage
-COPY --from=build /app/dist /usr/share/nginx/html
+RUN mkdir -p /usr/share/nginx/html/khmer_ttt_ui
+
+# Copy the build output from the build stage
+COPY --from=build /app/dist /usr/share/nginx/html/khmer_ttt_ui
 
 # Expose port 80
 EXPOSE 80
