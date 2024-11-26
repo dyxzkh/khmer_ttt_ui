@@ -19,11 +19,11 @@ RUN npm run build
 # Stage 2: Serve the app
 FROM nginx:alpine
 
-# Copy the build output from the build stage
-RUN mkdir -p /usr/share/nginx/html/khmer_ttt_ui
+# Create the directory for the app
+RUN mkdir -p /usr/share/nginx/html
 
 # Copy the build output from the build stage
-COPY --from=build /app/dist /usr/share/nginx/html/khmer_ttt_ui
+COPY --from=build /app/dist /usr/share/nginx/html
 
 # Expose port 80
 EXPOSE 80
