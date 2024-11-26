@@ -3,7 +3,7 @@ services:
     build: .
     container_name: khmer_ttt_ui
     ports:
-      - "8081:80" # Expose App 1 on port 8081 for internal use
+      - "80:80" # Expose App 1 on port 8081 for internal use
     environment:
       - PORT=80
     networks:
