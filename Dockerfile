@@ -19,8 +19,8 @@ RUN npm run build
 # Stage 2: Serve the app
 FROM nginx:alpine
 
-# Create the directory for the app
-RUN mkdir -p /usr/share/nginx/html
+# Create target directories
+RUN mkdir -p /usr/share/nginx/html/khmer_ttt_ui
 
 # Copy the build output from the build stage
 COPY --from=build /app/dist /usr/share/nginx/html
