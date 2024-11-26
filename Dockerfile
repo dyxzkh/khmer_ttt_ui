@@ -26,7 +26,7 @@ RUN mkdir -p /usr/share/nginx/html/khmer_ttt_ui
 COPY --from=build /app/dist /usr/share/nginx/html/khmer_ttt_ui
 
 # Copy nginx configuration  
-COPY ./nginx-config.conf /etc/nginx/conf.d/default.conf 
+# COPY ./nginx-config.conf /etc/nginx/conf.d/default.conf 
 
 # Expose port 80
 EXPOSE 80
