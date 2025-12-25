@@ -5,12 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "npx vite --host 0.0.0.0 --port 8080",
-    "start": "npm install vite --no-save && npm run dev",
     "build": "vue-tsc -b && npx vite build",
-    "preview": "npx vite preview"
+    "preview": "npx vite preview",
+    "start": "serve -s dist -l 8080"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
+    "serve": "^14.2.5",
     "vue": "^3.5.12",
     "vue-router": "^4.4.5"
   },
